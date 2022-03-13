@@ -12,6 +12,6 @@ steps:
 
   # Upload compiled pipeline to GCS.
   - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['cp', 'basic_pipeline.json', 'gs://doit-vertex-demo']
+    args: ['cp', 'basic_pipeline.json', 'gs://vertex-ai-test-344011aip-20220313120743']
     id:  'upload'
     waitFor: ['compile']
